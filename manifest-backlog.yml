@@ -9,6 +9,9 @@ applications:
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
     GRANT_TYPE: client_credentials
+    SPRING_SECURITY_USER_NAME: actuator
+    SPRING_SECURITY_USER_PASSWORD: operations4red
+    SPRING_SECURITY_USER_ROLES: ACTUATOR
   services:
   - tracker-backlog-database
   - tracker-service-registry
